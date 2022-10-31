@@ -1,8 +1,20 @@
-a = int(input('Wprowadź wiek klienta:'))
-if 0 < a <= 4:
-    y = 0
-elif 4 < a <= 18:
-    y = 10
+wiek = int(input('wprowadź wiek:'))
+if wiek <= 0:
+    print('wiek nie poprawny')
+    exit()
 else:
+ if 0 < wiek <= 4:
+    y = 0
+ elif 4 < wiek <= 18:
+    y = 10
+ elif wiek > 18:
     y = 20
-print(f'Cena biletu {y} zl ')
+print('Cena biletu {} zł.'.format(y))
+
+#def zbad(liczba):
+ #   if liczba & 1 == 0:
+ #       return 'liczba {} parzysta'.format(liczba)
+#    return 'liczba {} nieparzysta'.format(liczba)
+#for x in range(1,11):
+ #   print(zbad(x))
+
