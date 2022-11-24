@@ -50,7 +50,7 @@ print(animals)'''
 • Wyświetl imiona w kolejności od Z do A
 • Wyczyść drugą połowę listy, następnie wyświetl liczbę elementów listy.'''
 
-'''imiona = ['Kasia', 'Tomek', 'Jan', 'Ola', 'Jerzy', 'Marek', 'Piotr','Zuzia', 'Bartek', 'Jacek']
+imiona = ['Kasia', 'Tomek', 'Jan', 'Ola', 'Jerzy', 'Marek', 'Piotr','Zuzia', 'Bartek', 'Jacek']
 imiona[3] = 'Janusz'
 imiona.append('Kamil')
 imiona.pop(6)
@@ -73,7 +73,7 @@ print(imiona)
 sr = len(imiona)//2
 del imiona[sr:]
 print(imiona, len(imiona))
-'''
+
 
 
 
