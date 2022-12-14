@@ -50,7 +50,7 @@ print(animals)'''
 • Wyświetl imiona w kolejności od Z do A
 • Wyczyść drugą połowę listy, następnie wyświetl liczbę elementów listy.'''
 
-imiona = ['Kasia', 'Tomek', 'Jan', 'Ola', 'Jerzy', 'Marek', 'Piotr','Zuzia', 'Bartek', 'Jacek']
+'''imiona = ['Kasia', 'Tomek', 'Jan', 'Ola', 'Jerzy', 'Marek', 'Piotr','Zuzia', 'Bartek', 'Jacek']
 imiona[3] = 'Janusz'
 imiona.append('Kamil')
 imiona.pop(6)
@@ -72,8 +72,38 @@ imiona.reverse()
 print(imiona)
 sr = len(imiona)//2
 del imiona[sr:]
-print(imiona, len(imiona))
+print(imiona, len(imiona))'''
+
+'''                                                    ZADANIE 5'''
+import random as rd
+n = 15
+punkty = []
+for pkt in range(n):
+    punkty.append(rd.randint(0,51))
+print(punkty)
+
+a = min(punkty)
+b = max(punkty)
+print(f'Max liczbą jest:{b}', f'Min liczbą jest: {a}')
+
+licz = int(input('Podaj liczbę:'))
+if licz in punkty:
+    print('Indexem jest:',punkty.index(licz))
+else:
+    print('Error. Liczba nie występuje w liście')
+
+sr = sum(punkty)/n
+print(sr)
 
 
-
+bg = 0
+powyzej = []
+ponizej = []
+for c in range(len(punkty)):
+    if punkty[bg] > sr:
+        powyzej.append(punkty[bg])
+    else:
+        ponizej.append(punkty[bg])
+    bg += 1
+print(powyzej, ponizej)
 
