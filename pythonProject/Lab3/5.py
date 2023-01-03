@@ -1,9 +1,13 @@
-n = int(input('Ile jest studentów?:'))
-suma = 0
-st = 1
-while st <= n:
-    x = int(input(f'Wpisz ilość punktów studenta {st}:'))
-    suma += x
-    st += 1
-oc = suma/n
-print(f'średnia liczba punktów w grupie: {oc}')
+def prog(l1, val):
+    h = 0
+    for a in range(len(l1)):
+        if l1[a] == val:
+            h = h + 1
+    return h
+lista = []
+for i in 'programowanie':
+    lista.append(i)
+print(lista)
+g = 'a'
+f = prog(lista, g)
+print(f'Liczba znaków: {f}')
