@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Kalkulator</title>
+  </head>
+  <body>
+    <label for="liczba1">Liczba 1:</label>
+    <input type="number" id="liczba1"><br>
+
+    <label for="liczba2">Liczba 2:</label>
+    <input type="number" id="liczba2"><br>
+
+    <button onclick="dodaj()">Dodaj</button>
+    <button onclick="odejmij()">Odejmij</button>
+    <button onclick="pomnoz()">Pomnóż</button>
+    <button onclick="podziel()">Podziel</button><br>
+
+    <div id="wynik"></div>
+
+    <script>
+      function dodaj() {
+        const liczba1 = Number(document.getElementById('liczba1').value);
+        const liczba2 = Number(document.getElementById('liczba2').value);
+        const wynik = liczba1 + liczba2;
+        document.getElementById('wynik').innerHTML = `Wynik dodawania: ${wynik}`;
+      }
+
+      function odejmij() {
+        const liczba1 = Number(document.getElementById('liczba1').value);
+        const liczba2 = Number(document.getElementById('liczba2').value);
+        const wynik = liczba1 - liczba2;
+        document.getElementById('wynik').innerHTML = `Wynik odejmowania: ${wynik}`;
+      }
+
+      function pomnoz() {
+        const liczba1 = Number(document.getElementById('liczba1').value);
+        const liczba2 = Number(document.getElementById('liczba2').value);
+        const wynik = liczba1 * liczba2;
+        document.getElementById('wynik').innerHTML = `Wynik mnożenia: ${wynik}`;
+      }
